@@ -23,7 +23,7 @@ services:
       - ./wp-content/plugins:/var/www/html/wp-content/plugins
     ports:
       - 80:80
-    restart: always
+    restart: no
     environment:
       - WORDPRESS_DB_HOST=db
       - WORDPRESS_DB_USER=wordpress
